@@ -1,5 +1,5 @@
 #include <Arduino.h>
-#line 1 "/Users/saintaln/uergs/projetoEmbarcado/NKEArduino/src/src.ino"
+#line 1 "/home/runner/work/NKEArduino/NKEArduino/src/src.ino"
 /*
   Blink
 
@@ -25,11 +25,11 @@
 */
 
 // the setup function runs once when you press reset or power the board
-#line 26 "/Users/saintaln/uergs/projetoEmbarcado/NKEArduino/src/src.ino"
+#line 26 "/home/runner/work/NKEArduino/NKEArduino/src/src.ino"
 void setup();
-#line 32 "/Users/saintaln/uergs/projetoEmbarcado/NKEArduino/src/src.ino"
+#line 32 "/home/runner/work/NKEArduino/NKEArduino/src/src.ino"
 void loop();
-#line 26 "/Users/saintaln/uergs/projetoEmbarcado/NKEArduino/src/src.ino"
+#line 26 "/home/runner/work/NKEArduino/NKEArduino/src/src.ino"
 void setup() {
   // initialize digital pin LED_BUILTIN as an output.
   pinMode(LED_BUILTIN, OUTPUT);

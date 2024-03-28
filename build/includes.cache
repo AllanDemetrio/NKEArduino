@@ -2,15 +2,15 @@
   {
     "Sourcefile": null,
     "Include": "",
-    "Includepath": "/Users/saintaln/Library/Arduino15/packages/arduino/hardware/avr/1.8.6/cores/arduino"
+    "Includepath": "/home/runner/.arduino15/packages/arduino/hardware/avr/1.8.6/cores/arduino"
   },
   {
     "Sourcefile": null,
     "Include": "",
-    "Includepath": "/Users/saintaln/Library/Arduino15/packages/arduino/hardware/avr/1.8.6/variants/standard"
+    "Includepath": "/home/runner/.arduino15/packages/arduino/hardware/avr/1.8.6/variants/standard"
   },
   {
-    "Sourcefile": "/Users/saintaln/uergs/projetoEmbarcado/NKEArduino/build/sketch/src.ino.cpp",
+    "Sourcefile": "/home/runner/work/NKEArduino/NKEArduino/build/sketch/src.ino.cpp",
     "Include": "",
     "Includepath": null
   }
