@@ -83,11 +83,11 @@
    "-DARDUINO_ARCH_AVR",
    "-I/home/runner/.arduino15/packages/arduino/hardware/avr/1.8.6/cores/arduino",
    "-I/home/runner/.arduino15/packages/arduino/hardware/avr/1.8.6/variants/standard",
-   "/home/runner/.arduino15/packages/arduino/hardware/avr/1.8.6/cores/arduino/HardwareSerial.cpp",
+   "/home/runner/.arduino15/packages/arduino/hardware/avr/1.8.6/cores/arduino/HardwareSerial1.cpp",
    "-o",
-   "/home/runner/work/NKEArduino/NKEArduino/build/core/HardwareSerial.cpp.o"
+   "/home/runner/work/NKEArduino/NKEArduino/build/core/HardwareSerial1.cpp.o"
   ],
-  "file": "/home/runner/.arduino15/packages/arduino/hardware/avr/1.8.6/cores/arduino/HardwareSerial.cpp"
+  "file": "/home/runner/.arduino15/packages/arduino/hardware/avr/1.8.6/cores/arduino/HardwareSerial1.cpp"
  },
  {
   "directory": "/home/runner/work/NKEArduino/NKEArduino",
@@ -113,11 +113,11 @@
    "-DARDUINO_ARCH_AVR",
    "-I/home/runner/.arduino15/packages/arduino/hardware/avr/1.8.6/cores/arduino",
    "-I/home/runner/.arduino15/packages/arduino/hardware/avr/1.8.6/variants/standard",
-   "/home/runner/.arduino15/packages/arduino/hardware/avr/1.8.6/cores/arduino/HardwareSerial1.cpp",
+   "/home/runner/.arduino15/packages/arduino/hardware/avr/1.8.6/cores/arduino/HardwareSerial.cpp",
    "-o",
-   "/home/runner/work/NKEArduino/NKEArduino/build/core/HardwareSerial1.cpp.o"
+   "/home/runner/work/NKEArduino/NKEArduino/build/core/HardwareSerial.cpp.o"
   ],
-  "file": "/home/runner/.arduino15/packages/arduino/hardware/avr/1.8.6/cores/arduino/HardwareSerial1.cpp"
+  "file": "/home/runner/.arduino15/packages/arduino/hardware/avr/1.8.6/cores/arduino/HardwareSerial.cpp"
  },
  {
   "directory": "/home/runner/work/NKEArduino/NKEArduino",
