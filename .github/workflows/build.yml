@@ -26,4 +26,4 @@ jobs:
     - name: Compile
       run: |
         mkdir -p build
-        arduino-cli compile --fqbn arduino:avr:uno src -o build/
+        arduino-cli compile --fqbn arduino:avr:uno src --build-path build
