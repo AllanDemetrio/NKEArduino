@@ -1,0 +1,29 @@
+name: Arduino Build
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Set up Arduino CLI
+      uses: per1234/setup-arduino@v1
+      with:
+        arduino-version: 'latest'
+
+    - name: Install board package
+      run: |
+        arduino-cli core update-index
+        arduino-cli core install arduino:avr  # Pacote para o Arduino Uno
+
+    - name: Compile
+      run: |
+        mkdir -p build
+        arduino-cli compile --fqbn arduino:avr:uno src -o build/
