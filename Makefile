@@ -2,7 +2,7 @@
 BOARD_PACKAGE = arduino:avr
 BOARD_TYPE = uno
 
-ARDUINO_PATH = /dev/ttyUSB0
+ARDUINO_PATH = /dev/cu.usbmodem11101
 
 # Diretório do código-fonte do Arduino
 ARDUINO_SRC_DIR = src
