@@ -31,7 +31,7 @@ jobs:
       - name: Check for changes in build directory
         id: git-check
         run: |
-          git diff --exit-code --name-only build || (git config --global user.email "actions@github.com" && git config --global user.name "GitHub Actions" && git add build && git commit -m "Auto-commit build artifacts" && git push)
+          git diff --exit-code --name-only build || (git config --global user.email "allan-deus@uergs.edu.br" && git config --global user.name "Allan Demetrio" && git add build && git commit -m "Auto-commit build artifacts" && git push)
 
       - name: Print result
         run: |
