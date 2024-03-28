@@ -10,20 +10,29 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v2
+      - name: Checkout repository
+        uses: actions/checkout@v2
 
-    - name: Install Arduino CLI
-      uses: arduino/setup-arduino-cli@v1
-      with:
-        arduino-version: 'latest'
+      - name: Install Arduino CLI
+        uses: arduino/setup-arduino-cli@v1
+        with:
+          arduino-version: 'latest'
 
-    - name: Install board package
-      run: |
-        arduino-cli core update-index
-        arduino-cli core install arduino:avr  # Pacote para o Arduino Uno
+      - name: Install board package
+        run: |
+          arduino-cli core update-index
+          arduino-cli core install arduino:avr  # Pacote para o Arduino Uno
 
-    - name: Compile
-      run: |
-        mkdir -p build
-        arduino-cli compile --fqbn arduino:avr:uno src --build-path build
+      - name: Compile
+        run: |
+          mkdir -p build
+          arduino-cli compile --fqbn arduino:avr:uno src --build-path build
+
+      - name: Check for changes in build directory
+        id: git-check
+        run: |
+          git diff --exit-code --name-only build || (git config --global user.email "actions@github.com" && git config --global user.name "GitHub Actions" && git add build && git commit -m "Auto-commit build artifacts" && git push)
+
+      - name: Print result
+        run: |
+          echo "Changes detected: ${{ steps.git-check.outputs.exitcode }}"
